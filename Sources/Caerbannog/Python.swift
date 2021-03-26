@@ -38,7 +38,7 @@ public class PythonInterface {
   
   public init() {
     let hh = Bundle.main.privateFrameworksURL!
-    let hh1 = hh.appendingPathComponent("Python3.framework").appendingPathComponent("Versions").appendingPathComponent("Current")
+    let hh1 = hh.appendingPathComponent("Python.framework").appendingPathComponent("Versions").appendingPathComponent("Current")
     hh1.path.withWideChars {
       Py_SetPythonHome( $0 )
     }
